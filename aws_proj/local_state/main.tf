@@ -16,10 +16,9 @@ provider "aws"{
 
 
 # change the values of ami and instance_type
-
 resource "aws_instance" "app_server" {
- ami = ""
- instance_type = ""
+ ami = "ami-0884d2865dbe9de4b"
+ instance_type = "t2.micro"
 
  tags = {
   Name = "terraform_sample"
